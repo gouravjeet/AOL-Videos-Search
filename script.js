@@ -37,8 +37,7 @@ var loadVideo=function(id){
 
     myVideo.load();
     myVideo.play();
-    //var m=document.getElementById("paramId").getAttribute("value");
-    //console.log(el);
+
 };
 var createTableData=function(response){
     if(document.getElementById("bodyLeftTable").firstChild){
@@ -51,7 +50,6 @@ var createTableData=function(response){
         //document.getElementById("bodyLeftTable").appendChild(m);
     }
     var names= response.getElementsByTagName("item");
-    //console.log(names);
 
     for (var i=0;i<names.length;i++){
         var parent=document.createElement("div");
@@ -77,8 +75,8 @@ var createTableData=function(response){
         var descriptHTML=description[0].childNodes[0].nodeValue;
         var el = document.createElement('div');
         el.innerHTML = descriptHTML;
-        //console.log(el);
         var desc=el.getElementsByTagName('p')[0].childNodes[0].nodeValue;
+        console.log(desc.length);
 
         var g=el.getElementsByTagName('a')[0];
         el.getElementsByTagName('a')[0].childNodes[0].setAttribute("height","50px");
@@ -89,7 +87,7 @@ var createTableData=function(response){
         var ownerInfo=names[i].getElementsByTagName("videoOwner")[0].childNodes[0].nodeValue;
 
         var subchild1Text = document.createTextNode("Description : "+desc);
-        subchild1.className="tableRowsubChild";
+        subchild1.className="newsItemsDescription";
         subchild1.appendChild(subchild1Text);
 
         var subchild2=document.createElement("div");

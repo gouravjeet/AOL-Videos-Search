@@ -1,5 +1,23 @@
 body {
-    height: auto
+    height: auto;
+    border: medium;
+    background-color: darkslategrey;
+}
+button{
+    border-color: darkslategray;
+    background-color: darkslategray;
+    color:#ffffff;
+    font-family: monospace;
+    border-radius:2px;
+}
+.panel{
+    background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Garamond, serif;
+    height:25px;
+    margin:auto;
+    text-align: center;
 }
 #bodyMain{
     background: whitesmoke;
@@ -15,21 +33,40 @@ body {
 }
 #bodyLeft{
     float: left;
-    height: 100%;
-    width: 49%;
-    background: white;
-
+    height: 160px;
+    width: 50%;
+    background: black;
+    color:#ffffff;
 }
 #bodyLeftTable{
-    height:150px;
+    height:100%;
     width: 100%;
     overflow-y:auto;
     border: solid;
 }
+.newsItemsDescription {
+    height:33%;
+    font-size: 7px;
+    line-height: 1.2em;
+    height: 2.0em;
+    overflow: hidden;
+    padding: 2px;
+}
+a:link{
+    color:#ffffff;
+}
+.footer{
+    color: gray;
+    font-size: 10px;
+    font-family: monospace;
+    height:25px;
+    margin:auto;
+    text-align: center;
+}
 .tableRow{
-    height: 60px;
+    height: 50px;
     width: 100%;
-    border-bottom: solid black;
+    border-bottom: solid thin darkslategray;
 }
 .tableRowChild1{
     width:30%;
@@ -42,32 +79,14 @@ body {
     float: right;
 }
 .tableRowsubChild{
-    height:33%;
+    height:20%;
     font-size: 7px;
+    padding: 2px;
+
 }
 #bodyRight{
     float: right;
-    width: 49%;
+    width: 50%;
     background: black;
     height: 100%;
-}
-.btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #286090;
-    border-color: #204d74;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    background-image: none;
 }
