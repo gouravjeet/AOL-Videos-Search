@@ -109,12 +109,15 @@ a:link{
     height: 20%;
     width: 100%;
     color: black;
+    padding: 1%;
     border-bottom: solid thin #b9b9b9;
 }
 .tableRow:hover{
     text-decoration: underline;
     cursor: pointer;
     border-bottom: solid thin black;
+    padding: 2%;
+    z-index: 3;
     border-top: solid thin black;
 }
 .tableRowChild1{

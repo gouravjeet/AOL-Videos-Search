@@ -2,6 +2,13 @@
  * Created by gouravjeet on 2/6/15.
  */
 window.onload=function() {
+    var isFirefox = typeof InstallTrigger !== 'undefined';
+    if(isFirefox){
+       namespace="media:";
+    }
+    else {
+        namespace="";
+    }
     displayVideosData();
 };
     var displayVideosData = function () {
@@ -35,14 +42,11 @@ window.onload=function() {
 
     };
     var loadVideo = function (id) {
-        console.log(id);
         document.getElementById("searchVideo").setAttribute("src", id);
         var myVideo = document.getElementsByTagName("video")[0];
-
         myVideo.load();
         myVideo.muted=false;
         myVideo.play();
-
     };
     var createTableData = function (response) {
         if (document.getElementById("bodyLeftTable").firstChild) {
@@ -63,8 +67,7 @@ window.onload=function() {
             var subchild1 = document.createElement("div");
             var description = names[i].getElementsByTagName("description");
             var ids = names[i].getElementsByTagName("id")[0].innerHTML;
-            var urlValue = (names[i].getElementsByTagName("media:content")[0]).getAttribute("url");
-            console.log(urlValue);
+            var urlValue = (names[i].getElementsByTagName(namespace+"content")[0]).getAttribute("url");
 
             child2.setAttribute("id", urlValue);
             child2.addEventListener("click", function () {
@@ -74,7 +77,6 @@ window.onload=function() {
             var el = document.createElement('div');
             el.innerHTML = descriptHTML;
             var desc = el.getElementsByTagName('p')[0].childNodes[0].nodeValue;
-            console.log(desc.length);
 
             var g = el.getElementsByTagName('a')[0];
             el.getElementsByTagName('a')[0].childNodes[0].setAttribute("height", "100%");
@@ -108,14 +110,15 @@ window.onload=function() {
         }
     };
     var search = function (elem) {
+        alert(event.keyCode);
         if (event.keyCode == 13) {
+            alert("13");
             displayVideosData();
         }
     };
 
     var calculateTime = function (duration) {
         var text = "";
-        console.log(duration);
         var minutes;
         var seconds;
         var hours;
