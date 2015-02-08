@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title></title>
+</head>
+<body>
+<!--This is the top panel-->
+    <div class="top-panel"><p class="panel"> AOL Video Search</p></div>
+    <div id="bodyMain" >
+        <div id="body">
+            <!--This is the Search Bar Column-->
+            <div id="top">
+                <input id="search" onkeydown="search(this)" type="text" placeholder="Search for videos">
+                <span><img id="search-button" src="images/search4.png"  alt="Search Button" onclick="displayVideosData()"></image></span>
+            </div>
+            <!--This is the Table Column-->
+            <div id="bodyLeft">
+                <div id="bodyLeftTable" ></div>
+            </div>
+            <!--This is the Video Column-->
+            <div id="bodyRight">
+                <video id="videoId" width="100%" height="100%" onmouseover="videoHover()" onclick="videoClick()" controls>
+                    <source id="searchVideo" src="http://avideos.5min.com//379/5186379/518637808_2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+<!--This is the footer-->
+    <div class="footer">
+        <div class="center">
+            Contact Information: Gouravjeet Singh
+            <br>
+            Email: <a href="mailto:gouravjeet@gmail.com">gouravjeet@gmail.com</a><br>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
