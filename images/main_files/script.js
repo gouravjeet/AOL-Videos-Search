@@ -6,7 +6,6 @@ var displayVideosData=function(){
     var xmlhttp;
     var text="";
     text=document.getElementById('search').value;
-    document.getElementById('search').value="";
     var url="http://api.5min.com/search/";
     url=url+text+"/videos.xml";
     if (window.XMLHttpRequest) {
@@ -30,7 +29,6 @@ var displayVideosData=function(){
     }
     xmlhttp.open("GET",url, true);
     xmlhttp.send();
-
 };
 var loadVideo=function(id){
     console.log(id);
@@ -109,11 +107,6 @@ var createTableData=function(response){
         parent.appendChild(child1);
         parent.appendChild(child2);
         document.getElementById("bodyLeftTable").appendChild(parent);
-    }
-};
-var search=function(elem){
-    if(event.keyCode == 13) {
-        displayVideosData();
     }
 };
 

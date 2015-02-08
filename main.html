@@ -6,51 +6,31 @@
     <title></title>
 </head>
 <body>
-<div class="top-panel"> <p class="panel"> AOL Video Search</p></div>
+<div class="top-panel"><p class="panel"> AOL Video Search</p></div>
 <div id="bodyMain" >
     <div id="body">
-
-    <div id="top">
-        <div id="top_search" class="form">
-            <form>
-                <input id="search" type="text" name="Search for videos" autofocus>
-                <button class="btn-primary" type="button" onclick="displayVideosData()" >Submit</button>
-
-            </form>
+        <div id="top">
+            <input id="search" onkeydown="search(this)" type="text" placeholder="Search for videos">
+            <span><img id="search-button" src="images/search4.png"  alt="Search Button" onclick="displayVideosData()"></image></span>
         </div>
-    </div>
-    <div id="bodyLeft">
+        <div id="bodyLeft">
             <div id="bodyLeftTable" ></div>
-    </div>
-        <!--<span class="glyphicon glyphicon-search"></span>-->
-    <div id="bodyRight">
-        <!--<td height="80%" width="50%">-->
-            <!--<div id="videoDiv">-->
-                <!--<object width="260" height="260" data="http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf" type="application/x-shockwave-flash">-->
-                    <!--<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf" />-->
-                    <!--<param name="allowfullscreen" value="true" />-->
-                    <!--<param name="allowscriptaccess" value="always" />-->
-                    <!--<param id="paramId" name="flashvars" value='config={"plugins":{"pseudo":{"url":"flowplayer.pseudostreaming-3.1.3.swf"},"controls":{"backgroundColor":"#000000","backgroundGradient":"low"}},"clip":{"provider":"pseudo","url":"http://lvideos.5min.com/251539/25153871.flv"},"playlist":[{"provider":"pseudo","url":"http://lvideos.5min.com/251539/25153871.flv"}]}' />-->
-                <!--</object>-->
-            <!--</div>-->
-        <!--</td>-->
-        <video id="videoId" width="100%" height="100%" controls>
-            <source id="searchVideo" src="http://avideos.5min.com//379/5186379/518637808_2.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <div style="clear:both;"></div>
+        </div>
+        <div id="bodyRight">
+            <video id="videoId" width="100%" height="100%" controls>
+                <source id="searchVideo" src="http://avideos.5min.com//379/5186379/518637808_2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div style="clear:both;"></div>
     </div>
 </div>
 <div class="footer">
     <div class="center">
-        <br>
         Contact Information: Gouravjeet Singh
         <br>
         Email: <a href="mailto:gouravjeet@gmail.com">gouravjeet@gmail.com</a><br>
     </div>
 </div>
-
 <script type="application/javascript" src="script.js"></script>
 </body>
 </html>

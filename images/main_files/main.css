@@ -10,17 +10,18 @@ button{
     font-family: monospace;
     border-radius:2px;
 }
-#search-button{
-    padding-top: 2px;
-    height:13px;
-    width:13px;
+button:hover{
+    background-color: #9E6300;
+    text-decoration: solid;
 }
-#search-button:hover{
-    cursor:pointer;
+button:active{
+    background-color: #9E6300;
+    text-decoration: solid;
 }
 .top-panel{
     width: 100%;
     background-color: #337AB7;
+    margin-bottom: 0.5%;
     border-radius: 2px;
 }
 .panel{
@@ -51,17 +52,10 @@ button{
     background-color: whitesmoke;
     color: black;
     border-radius: 3px;
-    width:170px;
-    border : solid thin #b9b9b9;
+    border : solid thin black;
 }
-#search:hover{
-    border: solid thin #686868;
-}
-#search:focus{
-    border: solid thin #0069bf;
-    outline:0px !important;
-    -webkit-appearance:none;
-}
+
+
 #bodyLeft{
     /*padding-bottom: 10px;*/
     float: left;
@@ -73,7 +67,9 @@ button{
     height:100%;
     width: 100%;
     overflow-y:auto;
+
 }
+
 .newsItemsDescription {
     height:33%;
     font-size: 7px;
@@ -84,15 +80,16 @@ button{
     color: #337AB7;
     font-weight: bold;
 }
+
+
 .newsItemsDescription:hover{
     text-decoration: underline;
-
 }
 a:link{
     color:black;
 }
 .footer{
-    color: #337AB7;
+    color: orange;
     font-size: 10px;
     font-family: monospace;
     height:30%;
@@ -108,10 +105,12 @@ a:link{
     width: 100%;
     color: black;
     border-bottom: solid thin black;
+    cursor: hand;
 }
 .tableRow:hover{
-    text-decoration: underline;
-    cursor: pointer;
+    font-family: Arial;
+    /*text-decoration: underline;*/
+    cursor: hand;
 }
 .tableRowChild1{
     width:30%;
@@ -123,22 +122,15 @@ a:link{
     height: 100%;
     float: right;
 }
-.tableRowChild2:hover{
-    cursor: hand;
-}
 .tableRowsubChild{
-    line-height: 1.2em;
-    height: 1.2em;
+    height:20%;
     font-size: 6px;
-    padding: 1px;
+    padding: 2px;
     color: #337AB7;
     font-weight: bold;
-    overflow: hidden;
 }
 .tableRowsubChild:hover{
     text-decoration: underline;
-    cursor: hand;
-
 }
 #bodyRight{
     border: solid black thin;
