@@ -2,6 +2,7 @@ body {
     height: auto;
     border: medium;
     background-color: whitesmoke;
+    background-image: url("images/background-3.jpg");
 }
 button{
     border-color: #BF7800;
@@ -11,9 +12,9 @@ button{
     border-radius:2px;
 }
 #search-button{
-    padding-top: 2px;
-    height:13px;
-    width:13px;
+    padding-top: 0.5%;
+    height:2%;
+    width:2%;
 }
 #search-button:hover{
     cursor:pointer;
@@ -44,14 +45,15 @@ button{
     background-color: whitesmoke;
     height: 20%;
     width: 100%;
-    padding-bottom: 0.5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
 #search{
     font-family: Arial, sans-serif;
     background-color: whitesmoke;
     color: black;
-    border-radius: 3px;
-    width:170px;
+    /*border-radius: 3px;*/
+    width:25%;
     border : solid thin #b9b9b9;
 }
 #search:hover{
@@ -67,6 +69,7 @@ button{
     float: left;
     height: 200px;
     width: 30%;
+    border: solid thin #b9b9b9;
     background: whitesmoke;
 }
 #bodyLeftTable{
@@ -107,7 +110,8 @@ a:link{
     height: 20%;
     width: 100%;
     color: black;
-    border-bottom: solid thin black;
+    border-bottom: solid thin #b9b9b9;
+    border-right: solid thin #b9b9b9;
 }
 .tableRow:hover{
     text-decoration: underline;
