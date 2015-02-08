@@ -81,8 +81,8 @@ var createTableData=function(response){
         console.log(desc.length);
 
         var g=el.getElementsByTagName('a')[0];
-        el.getElementsByTagName('a')[0].childNodes[0].setAttribute("height","50px");
-        el.getElementsByTagName('a')[0].childNodes[0].setAttribute("width","50px");
+        el.getElementsByTagName('a')[0].childNodes[0].setAttribute("height","100%");
+        el.getElementsByTagName('a')[0].childNodes[0].setAttribute("width","100%");
         var child1Text = document.createTextNode("Image");
         child1.appendChild(g);
         var duration=names[i].getElementsByTagName("enclosure")[0].getAttribute("duration");

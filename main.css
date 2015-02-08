@@ -115,7 +115,7 @@ a:link{
 }
 .tableRowChild1{
     width:30%;
-    height: 30px ;
+    height: 100% ;
     float: left;
 }
 .tableRowChild2{
