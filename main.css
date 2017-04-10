@@ -35,6 +35,9 @@ button {
     margin:auto;
     text-align: center;
 }
+#hello {
+   color: blue; 
+}
 #bodyMain {
     background-color: #EDEBE8;
     height: 100%;
